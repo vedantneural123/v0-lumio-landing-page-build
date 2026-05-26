@@ -83,7 +83,7 @@ export function FeatureEcosystem() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           {features.map((feature, index) => {
             const Icon = feature.icon
@@ -91,8 +91,8 @@ export function FeatureEcosystem() {
               <motion.div
                 key={feature.title}
                 variants={cardVariants}
-                whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                className={`group relative ${feature.accent} border rounded-2xl p-8 overflow-hidden transition-all hover:border-slate-500/40`}
+                whileHover={{ y: -6, boxShadow: '0 16px 40px rgba(0, 0, 0, 0.3)' }}
+                className={`group relative ${feature.accent} border rounded-2xl p-8 overflow-hidden transition-all hover:border-slate-600/50`}
               >
                 {/* Background gradient */}
                 <motion.div
@@ -118,12 +118,12 @@ export function FeatureEcosystem() {
                   </motion.div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-bold text-white mb-3">
+                  <h3 className="text-xl font-bold text-white mb-4 tracking-tight">
                     {feature.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-slate-400 leading-relaxed">
+                  <p className="text-slate-400 leading-relaxed text-sm">
                     {feature.description}
                   </p>
 

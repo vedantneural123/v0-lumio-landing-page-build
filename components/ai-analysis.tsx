@@ -25,12 +25,12 @@ export function AIAnalysis() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
             Advanced AI Analysis
           </h2>
-          <p className="text-xl text-slate-400">
+          <p className="text-xl text-slate-350 leading-relaxed">
             Watch how Lumio understands your content at every second
           </p>
         </motion.div>

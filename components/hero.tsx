@@ -76,17 +76,17 @@ export function Hero() {
         </motion.div>
 
         {/* Headline */}
-        <motion.div variants={itemVariants} className="text-center mb-6">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+        <motion.div variants={itemVariants} className="text-center mb-8">
+          <h1 className="text-5xl md:text-7xl lg:text-7xl font-bold text-white mb-8 tracking-tight leading-tight">
             <span className="bg-gradient-to-r from-white via-slate-100 to-slate-200 bg-clip-text text-transparent">
               Turn one video into
             </span>
-            <br />
+            <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-violet-300 via-cyan-300 to-emerald-300 bg-clip-text text-transparent">
               a complete creator growth system
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-slate-350 max-w-3xl mx-auto leading-relaxed tracking-tight">
             Lumio helps creators transform long-form content into viral shorts,
             captions, hooks, titles, thumbnails, and publishing-ready content
             packs—powered by AI that understands what makes content tick.
@@ -96,20 +96,20 @@ export function Hero() {
         {/* CTA Buttons */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
+          className="flex flex-col sm:flex-row gap-4 justify-center mb-20"
         >
           <motion.button
-            whileHover={{ scale: 1.05, backgroundColor: '#4f46e5' }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-3.5 bg-indigo-600 text-white rounded-xl font-semibold flex items-center justify-center gap-2 transition-all hover:shadow-lg hover:shadow-indigo-600/20"
+            whileHover={{ scale: 1.03, backgroundColor: '#4f46e5', boxShadow: '0 12px 32px rgba(79, 70, 229, 0.3)' }}
+            whileTap={{ scale: 0.98 }}
+            className="px-8 py-3.5 bg-indigo-600 text-white rounded-lg font-semibold flex items-center justify-center gap-2 transition-all tracking-tight"
           >
             Start Creating
             <ArrowRight className="w-5 h-5" />
           </motion.button>
           <motion.button
-            whileHover={{ scale: 1.05, backgroundColor: 'rgba(15, 23, 42, 0.8)' }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-3.5 border border-slate-600/50 text-white rounded-xl font-semibold flex items-center justify-center gap-2 hover:border-slate-500/50 transition-all"
+            whileHover={{ scale: 1.03, backgroundColor: 'rgba(30, 41, 59, 0.6)', borderColor: 'rgba(148, 163, 184, 0.5)' }}
+            whileTap={{ scale: 0.98 }}
+            className="px-8 py-3.5 border border-slate-700/40 text-white rounded-lg font-semibold flex items-center justify-center gap-2 transition-all tracking-tight hover:bg-slate-900/40"
           >
             <Play className="w-5 h-5" />
             Watch Demo

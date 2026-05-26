@@ -31,12 +31,12 @@ export function ProductStory() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
             Your content, <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400">
               reimagined
             </span>
           </h2>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+          <p className="text-xl text-slate-350 max-w-2xl mx-auto leading-relaxed">
             Watch as Lumio transforms your long-form content into a complete
             content ecosystem
           </p>
@@ -48,9 +48,9 @@ export function ProductStory() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mb-20"
+          className="mb-24"
         >
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             {steps.map((step, index) => (
               <motion.div key={step.label} className="flex items-center gap-4 w-full lg:w-auto">
                 <motion.div
@@ -81,7 +81,7 @@ export function ProductStory() {
         </motion.div>
 
         {/* Two Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -91,10 +91,10 @@ export function ProductStory() {
             className="space-y-6"
           >
             <div>
-              <h3 className="text-3xl font-bold text-white mb-3">
+              <h3 className="text-3xl font-bold text-white mb-4 tracking-tight">
                 The AI that gets your content
               </h3>
-              <p className="text-lg text-slate-400">
+              <p className="text-lg text-slate-400 leading-relaxed">
                 Lumio&apos;s advanced AI doesn&apos;t just cut clips—it understands
                 the narrative, identifies hook moments, and optimizes every frame
                 for maximum engagement across all platforms.

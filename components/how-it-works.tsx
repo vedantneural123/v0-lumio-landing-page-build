@@ -58,12 +58,12 @@ export function HowItWorks() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-24"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
             How it works
           </h2>
-          <p className="text-xl text-slate-400">
+          <p className="text-xl text-slate-350 leading-relaxed">
             From video to publishable content in minutes
           </p>
         </motion.div>
@@ -95,14 +95,14 @@ export function HowItWorks() {
                   {index % 2 === 0 ? (
                     <>
                       <motion.div
-                        whileHover={{ x: -10 }}
+                        whileHover={{ x: -8 }}
                         className="space-y-4"
                       >
-                        <div className="flex items-center gap-4 mb-3">
-                          <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400">
+                        <div className="flex items-center gap-4 mb-4">
+                          <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400 tracking-tight">
                             {step.number}
                           </div>
-                          <h3 className="text-2xl font-bold text-white">
+                          <h3 className="text-2xl font-bold text-white tracking-tight">
                             {step.title}
                           </h3>
                         </div>
@@ -132,14 +132,14 @@ export function HowItWorks() {
                         <div className="text-6xl">{step.icon}</div>
                       </motion.div>
                       <motion.div
-                        whileHover={{ x: 10 }}
+                        whileHover={{ x: 8 }}
                         className="space-y-4"
                       >
-                        <div className="flex items-center gap-4 mb-3">
-                          <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400">
+                        <div className="flex items-center gap-4 mb-4">
+                          <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400 tracking-tight">
                             {step.number}
                           </div>
-                          <h3 className="text-2xl font-bold text-white">
+                          <h3 className="text-2xl font-bold text-white tracking-tight">
                             {step.title}
                           </h3>
                         </div>

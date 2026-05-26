@@ -48,18 +48,18 @@ export function ProductShowcase() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
             See Lumio in action
           </h2>
-          <p className="text-xl text-slate-400">
+          <p className="text-xl text-slate-350 leading-relaxed">
             Everything you need in one creative suite
           </p>
         </motion.div>
 
         {/* Showcase Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {showcaseItems.map((item, index) => {
             const Icon = item.icon
             return (
@@ -98,13 +98,13 @@ export function ProductShowcase() {
 
                     {/* Text */}
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-white mb-2">
+                      <h3 className="text-2xl font-bold text-white mb-3 tracking-tight">
                         {item.title}
                       </h3>
-                      <p className="text-sm text-slate-400 font-medium mb-4">
+                      <p className="text-sm text-slate-400 font-medium mb-4 tracking-tight">
                         {item.subtitle}
                       </p>
-                      <p className="text-slate-400 leading-relaxed">
+                      <p className="text-slate-400 leading-relaxed text-sm">
                         {item.description}
                       </p>
                     </div>

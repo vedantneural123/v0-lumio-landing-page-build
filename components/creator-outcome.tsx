@@ -68,15 +68,15 @@ export function CreatorOutcome() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
             Less friction. More output.{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
               Faster growth.
             </span>
           </h2>
-          <p className="text-xl text-slate-400">
+          <p className="text-xl text-slate-350 leading-relaxed">
             Creators using Lumio see measurable results
           </p>
         </motion.div>
@@ -87,7 +87,7 @@ export function CreatorOutcome() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-24"
         >
           {metrics.map((metric, index) => {
             const Icon = metric.icon
@@ -123,11 +123,11 @@ export function CreatorOutcome() {
                     <Icon className="w-6 h-6 text-white" />
                   </motion.div>
 
-                  <div className="mb-3">
-                    <p className="text-4xl font-bold text-white">
+                  <div className="mb-4">
+                    <p className="text-4xl font-bold text-white tracking-tight">
                       {metric.value}
                     </p>
-                    <p className="text-sm text-slate-400 font-medium">
+                    <p className="text-sm text-slate-400 font-medium tracking-tight">
                       {metric.label}
                     </p>
                   </div>
@@ -147,9 +147,9 @@ export function CreatorOutcome() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-slate-800/30 via-slate-900/20 to-slate-950/30 border border-slate-700/30 rounded-2xl p-8 md:p-12"
+          className="bg-gradient-to-br from-slate-800/30 via-slate-900/20 to-slate-950/30 border border-slate-700/30 rounded-2xl p-10 md:p-12"
         >
-          <h3 className="text-2xl font-bold text-white mb-8 text-center">
+          <h3 className="text-2xl font-bold text-white mb-10 text-center tracking-tight">
             What creators are saying
           </h3>
 

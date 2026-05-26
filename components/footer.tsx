@@ -19,10 +19,10 @@ export function Footer() {
   ]
 
   return (
-    <footer className="relative border-t border-slate-800/30 bg-gradient-to-b from-slate-950/50 to-slate-950 py-16 px-6">
+    <footer className="relative border-t border-slate-800/40 bg-gradient-to-b from-slate-950/50 to-slate-950 py-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
           {/* Brand */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export function Footer() {
               </div>
               <span className="text-lg font-bold text-white">Lumio</span>
             </div>
-            <p className="text-sm text-slate-400">
+            <p className="text-sm text-slate-400 leading-relaxed">
               Transform one video into a complete creator growth system.
             </p>
           </motion.div>
@@ -51,14 +51,14 @@ export function Footer() {
               transition={{ duration: 0.6, delay: groupIndex * 0.1 }}
               viewport={{ once: true }}
             >
-              <h4 className="font-semibold text-white mb-4">{group[0]}</h4>
-              <ul className="space-y-2">
+              <h4 className="font-semibold text-white mb-5 tracking-tight">{group[0]}</h4>
+              <ul className="space-y-3">
                 {group[1].map((link) => (
                   <li key={link}>
                     <motion.a
                       href="#"
-                      whileHover={{ x: 2, color: '#e0e7ff' }}
-                      className="text-sm text-slate-400 hover:text-indigo-300 transition-colors"
+                      whileHover={{ x: 3 }}
+                      className="text-sm text-slate-400 hover:text-slate-100 transition-colors tracking-tight"
                     >
                       {link}
                     </motion.a>
@@ -70,7 +70,7 @@ export function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-gradient-to-r from-slate-800/30 via-slate-700/30 to-slate-800/30 my-8" />
+        <div className="h-px bg-gradient-to-r from-slate-800/40 via-slate-700/40 to-slate-800/40 my-12" />
 
         {/* Bottom Section */}
         <motion.div
@@ -81,7 +81,7 @@ export function Footer() {
           className="flex flex-col md:flex-row items-center justify-between gap-6"
         >
           {/* Copyright */}
-          <p className="text-sm text-slate-400">
+          <p className="text-sm text-slate-400 tracking-tight">
             © 2024 Lumio. All rights reserved.
           </p>
 

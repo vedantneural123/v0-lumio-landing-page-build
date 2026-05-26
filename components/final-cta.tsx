@@ -53,7 +53,7 @@ export function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           viewport={{ once: true }}
-          className="text-5xl md:text-6xl font-bold text-white mb-6"
+          className="text-5xl md:text-6xl font-bold text-white mb-8 tracking-tight leading-tight"
         >
           Ready to transform your content?
         </motion.h2>
@@ -64,7 +64,7 @@ export function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-xl text-slate-400 mb-10 max-w-2xl mx-auto"
+          className="text-xl text-slate-350 mb-12 max-w-2xl mx-auto leading-relaxed"
         >
           Start for free. No credit card required. Create your first short-form
           content in minutes.
@@ -80,24 +80,24 @@ export function FinalCTA() {
         >
           <motion.button
             whileHover={{
-              scale: 1.05,
+              scale: 1.03,
               backgroundColor: '#4f46e5',
-              boxShadow: '0 0 30px rgba(79, 70, 229, 0.4)',
+              boxShadow: '0 16px 40px rgba(79, 70, 229, 0.3)',
             }}
-            whileTap={{ scale: 0.95 }}
-            className="px-10 py-4 bg-indigo-600 text-white rounded-xl font-bold text-lg flex items-center justify-center gap-3 transition-all"
+            whileTap={{ scale: 0.98 }}
+            className="px-10 py-4 bg-indigo-600 text-white rounded-lg font-bold text-lg flex items-center justify-center gap-3 transition-all tracking-tight"
           >
             Start Creating Now
             <ArrowRight className="w-6 h-6" />
           </motion.button>
           <motion.button
             whileHover={{
-              scale: 1.05,
-              backgroundColor: 'rgba(15, 23, 42, 0.8)',
-              borderColor: 'rgba(148, 163, 184, 0.6)',
+              scale: 1.03,
+              backgroundColor: 'rgba(30, 41, 59, 0.6)',
+              borderColor: 'rgba(148, 163, 184, 0.5)',
             }}
-            whileTap={{ scale: 0.95 }}
-            className="px-10 py-4 border border-slate-600/50 text-white rounded-xl font-bold text-lg transition-all hover:border-slate-500/50"
+            whileTap={{ scale: 0.98 }}
+            className="px-10 py-4 border border-slate-700/40 text-white rounded-lg font-bold text-lg transition-all tracking-tight hover:bg-slate-900/40"
           >
             Schedule a Demo
           </motion.button>
